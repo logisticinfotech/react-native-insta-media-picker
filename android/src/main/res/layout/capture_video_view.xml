@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/captureVideo"
+    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/surfaceConainer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <include layout="@layout/surface_view"/>
+        <TextView
+            android:id="@+id/txtDuration"
+            android:text="00:00"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mContainerBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/mSwitchCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:clickable="true"
+                android:background="@drawable/ic_switch_camera"/>
+
+        </FrameLayout>
+
+<!--        <FrameLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_above="@id/mContainerBtn"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_alignParentRight="true">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/mFlashPhoto"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="end|top"-->
+<!--                android:layout_margin="16dp"-->
+<!--                android:clickable="true"-->
+<!--                android:src="@drawable/ic_flash_auto"/>-->
+
+<!--        </FrameLayout>-->
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/surfaceConainer"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/mBtnTakeVideo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/btn_capture_video" />
+
+    </LinearLayout>
+
+</RelativeLayout>
