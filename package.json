@@ -1,8 +1,8 @@
 {
-  "name": "react-native-insta-media-picker",
-  "title": "react-native-insta-media-picker",
+  "name": "@logisticinfotech/react-native-insta-media-picker",
+  "title": "@logisticinfotech/react-native-insta-media-picker",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "Instagram like media picker for react native",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,12 +13,13 @@
     "baseUrl": "https://github.com/logisticinfotech/react-native-insta-media-picker"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "Instagram",
+    "Media Picker",
+    "Picker",
+    "Insta"
   ],
-  "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
-  },
+  "author": "Kishan Bera, Bhavin Rajapara, Shubham Vala",
   "license": "MIT",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
